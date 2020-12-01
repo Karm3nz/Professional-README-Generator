@@ -1,16 +1,16 @@
-// function to generate markdown for README
+// function to generate markdown for README (template for the README)
 function generateMarkdown(answers) {
   return ` 
-  # ${answers.projectTitle}
+  # ${answers.projectTitle} 
   
   ![badge](https://img.shields.io/badge/license-${answers.license}-green)<br />
 
-  ## Description 
+  ## Description ✏️
 
   ${answers.description}
 
 
-  ## Table of Contents
+  ## Table of Contents 📜
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -20,20 +20,20 @@ function generateMarkdown(answers) {
   * [Tests](#tests)
   * [Questions](#questions)
 
-  ## Installation
+  ## Installation 💾
 
   ${answers.installation}
 
-  ## Usage 
+  ## Usage 🔧
 
   ${answers.usage}
 
 
-  ## Credits
+  ## Credits 📣
 
   ${answers.credit}
 
-  ## License
+  ## License 🛡️
 
   ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
   <br />
@@ -41,15 +41,15 @@ function generateMarkdown(answers) {
 
   ---
 
-  ## Contributing
+  ## Contributing 👪
 
   ${answers.contributing}
 
-  ## Tests
+  ## Tests 🔍
 
   ${answers.tests}
 
-  ## Questions
+  ## Questions ❓
 
   Find me on GitHub: [${answers.username}](https://github.com/${answers.username})
   <br>

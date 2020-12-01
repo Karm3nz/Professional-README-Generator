@@ -27,6 +27,12 @@
     // WHEN I click on the links in the Table of Contents
     // THEN I am taken to the corresponding section of the README
 
+//declaring variables
+const fs = require("fs");
+const util = require("util");
+const inquirer = require("inquirer");
+const generateReadme = require("./utils/generateMarkdown")
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
 function askQuestions() {
@@ -64,6 +70,11 @@ function askQuestions() {
             message: "What is this project usage for?"
         },
         {
+            type: "input",
+            name: "credit",
+            message: "If you used any third-party assets that require attribution or followed tutorials, include links to those here as well."
+        },
+        {
             type: "list",
             name: "license",
             message: "Choose the license for this project: ",
@@ -90,12 +101,24 @@ function askQuestions() {
         {
             type: "input",
             name: "username",
-            message: "Please enter your GitHub username: "
+            message: "Please enter your GitHub username: ",
+            validate: function(answer) {
+                if (answer.length < 1) {
+                    return console.log("A valid Github username is required!");
+                }
+                return true;
+            }     
         },
         {
             type: "input",
             name: "email",
-            message: "Please enter your email: "
+            message: "Please enter your email: ",
+            validate: function(answer) {
+                if (answer.length < 1) {
+                    return console.log("A valid email is required!");
+                }
+                return true;
+            }
         }
     ]);
 } 
@@ -105,8 +128,19 @@ function writeToFile(fileName, data) {
 }
 
 // function to initialize program
-function init() {
-
+// Async function using util.promisify 
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await askQuestions();
+        const generateContent = generateReadme(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./dist/README.md', generateContent);
+        console.log('Successfully wrote to README.md!');
+    }   
+    catch(err) {
+        console.log(err);
+    }
 }
 
 // function call to initialize program

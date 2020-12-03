@@ -42,7 +42,7 @@ function askQuestions() {
             name: "projectTitle",
             message: "What is the project title?",
             validate: function(answer) {
-                if (answer.length < 1) {
+                if (answer ===  "") {
                     return console.log("A valid project title is required!");
                 }
                 return true;
@@ -53,7 +53,7 @@ function askQuestions() {
             name: "description",
             message: "Write a brief description of your project: ",
             validate: function(answer) {
-                if (answer.length < 1) {
+                if (answer ===  "") {
                     return console.log("A valid project description is required!");
                 }
                 return true;
@@ -103,7 +103,7 @@ function askQuestions() {
             name: "username",
             message: "Please enter your GitHub username: ",
             validate: function(answer) {
-                if (answer.length < 1) {
+                if (answer ===  "") {
                     return console.log("A valid Github username is required!");
                 }
                 return true;
@@ -114,7 +114,13 @@ function askQuestions() {
             name: "email",
             message: "Please enter your email: ",
             validate: function(answer) {
-                if (answer.length < 1) {
+                const ifEmail = RegExp(".com");
+                
+                if (answer ===  "") {
+                    return console.log("A valid email is required!");
+                }              
+                //tests if email contains ".com"
+                else if (ifEmail.test(answer) === false) {
                     return console.log("A valid email is required!");
                 }
                 return true;
@@ -122,10 +128,6 @@ function askQuestions() {
         }
     ]);
 } 
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
 // function to initialize program
 // Async function using util.promisify 

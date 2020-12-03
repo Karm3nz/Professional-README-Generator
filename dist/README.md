@@ -1,5 +1,5 @@
  
-  # Professional README Generator
+  # Professional README Generator 
   
   ![badge](https://img.shields.io/badge/license-MIT-green)<br />
 
@@ -20,7 +20,7 @@
 
   ## Installation 💾
 
-  Requires installation of npm inquirer. 
+  Requires installation of npm inquirer.
 
   ## Usage 🔧
 

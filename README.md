@@ -26,7 +26,8 @@ This project features the inquirer npm to prompt necessary questions to fill in 
 * Install node.js here: https://nodejs.org/en/download/
 * From the repository download zip file of the repository (found when you click on the green "Code" button)
 * Inside your computer's command-line interface, navigate into the file "develop".
-* In the command-line type in "node index.js" to prompt the questions required to generate a README.md file.
+* Type in "npm install" to install the dpendencies required to run the application.
+* From here in the command-line, type in "node index.js" to run the application and prompt the questions required to generate a README.md file.
 
 ![Professional README Generator](./assets/readme_generator.gif)
 

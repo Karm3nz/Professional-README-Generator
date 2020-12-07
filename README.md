@@ -26,7 +26,7 @@ This project features the inquirer npm to prompt necessary questions to fill in 
 * Install node.js here: https://nodejs.org/en/download/
 * From the repository download zip file of the repository (found when you click on the green "Code" button)
 * Inside your computer's command-line interface, navigate into the file "develop".
-* Type in "npm install" to install the dpendencies required to run the application.
+* Type in "npm install" to install the dependencies required to run the application.
 * From here in the command-line, type in "node index.js" to run the application and prompt the questions required to generate a README.md file.
 
 ![Professional README Generator](./assets/readme_generator.gif)
@@ -36,7 +36,7 @@ This project features the inquirer npm to prompt necessary questions to fill in 
 
 The usage of the Professional README Generator is to make the process of creating READMEs to be easier and faster by having a pre-built README format in place for the user to enter data into. 
 
-After installation, the user can follow along with the prompted questions in the command-line until they're given the confirmation that the README.md file is successfully wirtten to. From here, the user can navigate to the "dist" folder to view the generated README.
+After installation, the user can follow along with the prompted questions in the command-line until they're given the confirmation that the README.md file is successfully written to. From here, the user can navigate to the "dist" folder to view the generated README.
 
 
 ## Credits 📣

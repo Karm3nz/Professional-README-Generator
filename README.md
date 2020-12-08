@@ -1,6 +1,6 @@
 # Professional README Generator
 
-## Description ✏️
+## Description
 
 A good README is an extremely important part of your project's repository. A well-crafted one allows you to show off your work to other developers as well as potential employers. 
 The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. 
@@ -12,7 +12,7 @@ Writing the layout of a README can get pretty repetitive, and that's where the P
 This project features the inquirer npm to prompt necessary questions to fill in the pre-built layout of the README.
 
 
-## Table of Contents 📜
+## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -20,7 +20,7 @@ This project features the inquirer npm to prompt necessary questions to fill in 
 * [License](#license)
 
 
-## Installation 💾
+## Installation
 
 * Make sure to have a text editor of your choice installed (the example below shows "Visual Studio Code").
 * Install node.js here: https://nodejs.org/en/download/
@@ -32,14 +32,14 @@ This project features the inquirer npm to prompt necessary questions to fill in 
 ![Professional README Generator](./assets/readme_generator.gif)
 
 
-## Usage 🔧
+## Usage
 
 The usage of the Professional README Generator is to make the process of creating READMEs to be easier and faster by having a pre-built README format in place for the user to enter data into. 
 
 After installation, the user can follow along with the prompted questions in the command-line until they're given the confirmation that the README.md file is successfully written to. From here, the user can navigate to the "dist" folder to view the generated README.
 
 
-## Credits 📣
+## Credits
 
 References/tutorials:
 * [Joseph DeWoody](https://github.com/jpd61/README-generator)
@@ -48,7 +48,7 @@ References/tutorials:
 * (Badges) https://shields.io/category/license
 
 
-## License 🛡️
+## License
 
 MIT License
 
@@ -73,7 +73,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## Badges ✅ 
+## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 ![badge](https://img.shields.io/badge/license-MIT-green)
